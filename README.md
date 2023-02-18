@@ -1,14 +1,29 @@
 # Sentence and Word Reverser
- This C program reads a sentence from the standard input, splits it into words, and offers three options for processing the sentence:
- - Reverse the order of the words in the sentence, keeping the words intact (1);
- - Reverse the order of the letters in each word, keeping the word order intact (2);
- - Do both of the above (3);
-     
-The program prompts the user to choose one of these options, and then performs the selected operation on the input sentence. The output is printed to the standard output
+ This is a basic C program that provides 3 functionalities:
+  - Reverse a given sentence;
+  - Reverse the order of the letters in each word;
+  - Does both of the previous functionalities separatedly and then simultaneously;
+        
+              
+## Getting Started
+To use this program, you will need to have a C compiler installed on your machine. Once installed, you can follow these steps:
+ - Clone or download the repository to your local machine;
+ -  Open the command prompt and navigate to the directory containing the download;
+ -  Run the command ```gcc sentenceReverse.c```;
+ -  Run the command ```./a.out``` to start the program;
+ -  Follow the instructions given by the program to select a functionality and enter a sentence.
 
-## Usage
-- Compile the program using a C compiler;
-- Run the compiled executable;
-- Enter a sentence of up to 100 characters;
-- Choose one of the three options to process the sentence;
-- View the output on the standard output.
+## Functionalities:
+## Sentence Reverser:
+Prints the given sentence in reverse order.
+
+## Word Reverser
+Reverses the order of the letters in each word of the given sentence.
+
+## Both
+Performs both of previous functionalities and then does both of them simultaneously
+
+## Limitations
+- The program limits the sentence to a maximum of 100 characters;
+- The program assumes that words in the sentence are separated by a single space;
+- The program may not work properly with input that contains non-ACSII characters.
