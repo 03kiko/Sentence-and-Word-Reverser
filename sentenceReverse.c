@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+// modify max characters
+int maxCharacters = 100;
 
 void wordReverser(int count, char** words);
 void setenceReverser( int count, char** words);
@@ -20,20 +22,20 @@ int main(){
     } while (answer != '1' && answer != '2' && answer != '3');
     
     
-    char sentence[101];
+    char sentence[maxCharacters + 1];
     
     printf("Enter a sentence (limited to a max of 100 characters): ");
-    fgets(sentence, 101, stdin); // scanf only reads untill finds the first whitspace; 101 to allow for '\0' character
+    fgets(sentence, maxCharacters + 1, stdin); // scanf only reads untill finds the first whitspace; max characters + 1 to allow space for '\0' character
 
     // Remove "\n" from the last word
     int index = strcspn(sentence, "\n"); // find the index of "\n"
     sentence[index] = '\0';
 
     // Split into words
-    char* words[101];
+    char* words[maxCharacters + 1];
     char* word = strtok(sentence, " ");
     int count = 0;
-    while (word != NULL && count < 101)
+    while (word != NULL && count < maxCharacters + 1)
     {
         words[count] = word;
         count++;        
