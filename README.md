@@ -13,6 +13,11 @@ To use this program, you will need to have a C compiler installed on your machin
  -  Run the command ```./a.out``` to start the program;
  -  Follow the instructions given by the program to select a functionality and enter a sentence.
 
+## Usage Example
+<img width="470" alt="image" src="https://user-images.githubusercontent.com/113793178/219876430-7bc29291-8a02-4fb8-8034-5138903a4aa0.png">
+
+To modify the max characters change the variable ```int maxCharacters = 100;``` to the number you want.
+
 ## Functionalities:
 ## Sentence Reverser:
 Prints the given sentence in reverse order.
